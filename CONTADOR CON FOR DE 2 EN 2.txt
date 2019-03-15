@@ -1,0 +1,26 @@
+package FORCICLO;
+
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+
+public class REPETICIONFOR {
+
+       public static void main(String[] args) {
+
+      Scanner dato= new Scanner(System.in);
+        
+                 int I = Integer.parseInt(JOptionPane.showInputDialog(null," INGRESE DATO INICIAL " ));
+
+                 int F = Integer.parseInt(JOptionPane.showInputDialog(null," INGRESE DATO FINAL " ));
+        
+        JOptionPane.showMessageDialog(null," LOS VALORES IRAN DE 2 EN 2 ");
+        for (int x=I;x<=F;x=x+2){
+            
+               JOptionPane.showMessageDialog(null,x);
+           
+        }
+ 
+    }
+    
+}

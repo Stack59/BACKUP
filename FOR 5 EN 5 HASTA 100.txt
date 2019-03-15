@@ -1,0 +1,13 @@
+package FOREJER1;
+import javax.swing.JOptionPane;
+
+public class FOREJER1 {
+    public static void main(String[] args) {
+        JOptionPane.showMessageDialog(null," EL VALOR AUMENTARA DE 5 EN 5 HASTA 100 " );
+        for (int N=5 ; N<=100 ; N=N+5) {
+            
+    JOptionPane.showMessageDialog(null," NUMERO ACTUAL = " + N);
+    
+        }
+    }
+}

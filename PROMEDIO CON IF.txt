@@ -1,0 +1,58 @@
+
+package promedioif;
+
+import java.util.*;
+import javax.swing.JOptionPane;
+
+
+public class PROMEDIOIF {
+
+
+    public static void main(String[] args) {
+        Scanner dato = new Scanner(System.in);
+
+        
+        double LABO1 = Double.parseDouble(JOptionPane.showInputDialog(null, " INGRESE LABORATORIO 1: ", " LAB1"));
+        while (LABO1 > 10 || LABO1 < 0) {
+            LABO1 = Double.parseDouble(JOptionPane.showInputDialog(null," ERRROR! INGRESE LA NOTA OTRA VEZ ", "LAB1"));
+        }
+        
+        double PAR1 = Double.parseDouble(JOptionPane.showInputDialog(null, " INGRESE PARCIAL 1: ", " PAR1"));
+        while (PAR1 > 10 || PAR1 < 0) {
+            PAR1 = Double.parseDouble(JOptionPane.showInputDialog(null, " ERRROR! INGRESE LA NOTA OTRA VEZ : ", " PAR1"));
+        }
+
+        double LABO2 = Double.parseDouble(JOptionPane.showInputDialog(null, " INGRESE LABORATORIO 2: ", " LAB2"));
+        while (LABO2 > 10 || LABO2 < 0) {
+            LABO2 = Double.parseDouble(JOptionPane.showInputDialog(null," ERRROR! INGRESE LA NOTA OTRA VEZ ", "LAB2"));
+        }
+
+        double PAR2 = Double.parseDouble(JOptionPane.showInputDialog(null, " INGRESE PARCIAL 2: ", " PAR2"));
+        while (PAR2 > 10 || PAR2 < 0) {
+           PAR2 = Double.parseDouble(JOptionPane.showInputDialog(null, " ERRROR! INGRESE LA NOTA OTRA VEZ : ", " PAR2"));
+        }
+
+        double LABO3 = Double.parseDouble(JOptionPane.showInputDialog(null, " INGRESE LABORATORIO 3: ", " LAB3"));
+        while (LABO3 > 10 || LABO3 < 0) {
+            LABO3 = Double.parseDouble(JOptionPane.showInputDialog(null," ERRROR! INGRESE LA NOTA OTRA VEZ ", "LAB2"));
+        }
+
+        double PAR3 = Double.parseDouble(JOptionPane.showInputDialog(null, " INGRESE PARCIAL 3: ", " PAR3"));
+        while (PAR3 > 10 || PAR3 < 0) {
+            PAR3 = Double.parseDouble(JOptionPane.showInputDialog(null, " ERRROR! INGRESE LA NOTA OTRA VEZ : ", " PAR3"));
+        }
+
+        double RESUL1 = (LABO1 + LABO2 + LABO3) * 0.40 / 3;
+        double RESUL2 = (PAR1 + PAR2 + PAR3) * 0.60 / 3;
+
+        double RESUL3 = (RESUL1 + RESUL2);
+
+        if (RESUL3 >= 6) {
+            JOptionPane.showMessageDialog(null," APROBADO = "+ RESUL3);
+        } else {
+            JOptionPane.showMessageDialog(null," REPROBADO = "+ RESUL3);
+        }
+
+    }
+
+}

@@ -1,0 +1,47 @@
+
+package laboratorio1;
+
+import java.util.Scanner;
+
+public class Laboratorio1 {
+
+package laboratorio1;
+
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+import static javax.swing.JOptionPane.QUESTION_MESSAGE;
+
+public class Laboratorio1 {
+    public static void main(String[] args) {
+
+           Scanner dato = new Scanner(System.in);  
+           
+        int x = 1;
+        int menores = 0,mayores = 0;
+        int total= 0;
+
+int numero = Integer.parseInt(JOptionPane.showInputDialog(null, " CUANTOS NUMEROS QUIERE INGRESAR ?", " NUMERO DE VALORES ", QUESTION_MESSAGE));
+
+        
+        while(x<=numero ){
+            int dato1 = Integer.parseInt(JOptionPane.showInputDialog(null, " INGRESE EL DATO "+ x));
+
+           if (dato1>0){
+               mayores++;
+           }
+           
+           if (dato1<5){
+               menores++;
+           }
+           
+           total=total+dato1;
+
+           x++;
+        }         
+         JOptionPane.showMessageDialog(null," EL NUMERO DE MENORES QUE 5 FUE DE = "+ menores);
+         JOptionPane.showMessageDialog(null," EL NUMERO DE MAYORES QUE 0 FUE DE = "+ mayores); 
+         JOptionPane.showMessageDialog(null," LA SUMA ES DE = "+ total); 
+   
+    }
+    
+}

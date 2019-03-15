@@ -1,0 +1,11 @@
+package JOPTION;
+import javax.swing.JOptionPane;
+
+public class JOPTION {
+    public static void main(String[] args) {
+        JOptionPane.showMessageDialog(null," HOLA MUNDO "," HOLA ",2);
+        
+  /* EL 2 ES EL TIPO DE MENSAJE QUE ES (ERROR,ADVERTENCIA ETC);*/
+
+    }
+}

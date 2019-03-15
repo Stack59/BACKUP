@@ -1,0 +1,20 @@
+
+package unidad2;
+import javax.swing.JOptionPane;
+
+public class ejerc {
+    public static void main(String[] args) {
+        String N1;
+        String N2;
+        int NUME1;
+        int NUME2;
+        int SUMA;
+        
+        N1=JOptionPane.showInputDialog(" INGRESE EL PRIMER NUMERO ", " PRIMER NUMERO ");
+        N2=JOptionPane.showInputDialog(" INGRESE EL SEGUNDO NUMERO ", " SEGUNDO NUMERO ");
+        NUME1=Integer.parseInt(N1);
+        NUME2=Integer.parseInt(N2);
+        SUMA=NUME1+NUME2;
+        JOptionPane.showMessageDialog(null, " EL RESULTADO DE "+ N1 +" + "+ N2 +" ES = "+ SUMA );
+    }  
+}

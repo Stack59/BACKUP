@@ -1,0 +1,32 @@
+
+package SALARIO;
+
+import java.util.*;
+import javax.swing.JOptionPane;
+
+public class SALARIO {
+    public static void main(String[] args) {
+        
+        int HorasT;
+        int Horasx;
+        int Horas;
+        double SalarioT = 0;
+        
+        Horas = Integer.parseInt(JOptionPane.showInputDialog(null, " ¿ CUANTAS HORAS DE TRABAJO A REALIZADO ? ", " HORAS TRABAJADAS "));
+
+        if (Horas<40){
+            
+            SalarioT = Horas*10;
+            
+        }else if( Horas>=40 ){
+            
+            
+              Horasx = Horas-40;
+              HorasT = Horasx*20;
+              
+                SalarioT = HorasT+(40*15);        
+                }
+        JOptionPane.showMessageDialog(null, "  SU SALARIO SERA DE = $  "+ SalarioT);
+    }
+
+}

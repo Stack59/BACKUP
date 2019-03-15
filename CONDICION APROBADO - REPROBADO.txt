@@ -1,0 +1,17 @@
+package CONDICION;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+public class CONDICION {
+    
+    public static void main(String[] args){
+
+int N = Integer.parseInt(JOptionPane.showInputDialog(" INGRESE SU NOTA "," NOTA "));
+        
+        if(N>=6){
+            JOptionPane.showMessageDialog(null," APROBADO ");
+        }else if(N<6){
+              JOptionPane.showMessageDialog(null," REPROBADO ");
+        }
+}
+}   

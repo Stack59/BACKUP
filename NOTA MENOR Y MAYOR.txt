@@ -1,0 +1,37 @@
+
+package ejercicios1;
+import java.util.*;
+import javax.swing.JOptionPane;
+
+public class Notas {
+    
+     public static void main(String[] args) {
+         Scanner dato=new Scanner(System.in);
+         
+         double nota1,nota2,nota3,nota4,nota5;
+         double mayor;
+         
+        nota1 = Integer.parseInt(JOptionPane.showInputDialog(null, " INGRESE NOTA 1 ", " NOTA 1 "));
+        nota2 = Integer.parseInt(JOptionPane.showInputDialog(null, " INGRESE NOTA 2 ", " NOTA 1 "));
+        nota3 = Integer.parseInt(JOptionPane.showInputDialog(null, " INGRESE NOTA 3 ", " NOTA 1 "));
+        nota4 = Integer.parseInt(JOptionPane.showInputDialog(null, " INGRESE NOTA 4 ", " NOTA 1 "));
+        nota5 = Integer.parseInt(JOptionPane.showInputDialog(null, " INGRESE NOTA 5 ", " NOTA 1 "));
+
+        
+        if ( nota1>=nota2 && nota1>=nota3 && nota1>=nota4 && nota1>=nota5  ){
+            JOptionPane.showMessageDialog(null, " LA MAYOR NOTA ES LA PRIMERA  "+ nota1);
+            
+        }else if( nota2>=nota1 && nota2>=nota3 && nota2>=nota4 && nota2>=nota5  ){
+           JOptionPane.showMessageDialog(null, " LA MAYOR NOTA ES LA SEGUNDA  "+ nota2);
+            
+        }else if( nota3>=nota1 && nota3>=nota2 && nota3>=nota4 && nota3>=nota5  ){
+           JOptionPane.showMessageDialog(null, " LA MAYOR NOTA ES LA TERCERA  "+ nota3);
+            
+        }else if( nota4>=nota1 && nota4>=nota2 && nota4>=nota3 && nota4>=nota5  ){
+           JOptionPane.showMessageDialog(null, " LA MAYOR NOTA ES LA CUARTA  "+ nota4);
+            
+        }else if( nota5>=nota1 && nota5>=nota2 && nota5>=nota3 && nota5>=nota4  ){
+           JOptionPane.showMessageDialog(null, " LA MAYOR NOTA ES LA QUINTA  "+ nota5);
+        }
+     }
+}

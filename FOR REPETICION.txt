@@ -1,0 +1,24 @@
+package FORREPE;
+
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+
+public class REPETICION {
+
+       public static void main(String[] args) {
+
+                 int I = Integer.parseInt(JOptionPane.showInputDialog(null," INGRESE DATO INICIAL " ));
+
+                 int F = Integer.parseInt(JOptionPane.showInputDialog(null," INGRESE DATO FINAL " ));
+        
+        JOptionPane.showMessageDialog(null," LOS VALORES IRAN DE 1 EN 1 ");
+        for (int x=I;x<=F;x++){
+            
+               JOptionPane.showMessageDialog(null,x);
+           
+        }
+ 
+    }
+    
+}

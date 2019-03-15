@@ -1,0 +1,34 @@
+package tareaprogra2;
+
+import java.util.*;
+import javax.swing.JOptionPane;
+
+public class TAREAPROGRAIF {
+
+    public static void main(String[] args) {
+        Scanner dato = new Scanner(System.in);
+
+        int NOTA;
+
+        NOTA = Integer.parseInt(JOptionPane.showInputDialog(null, " INGRESE SU NOTA ", " NOTA "));
+
+        while (NOTA > 100 || NOTA < 0) {
+            JOptionPane.showMessageDialog(null, " VALOR INGRESADO ERRONEO" + "\n INGRESELO OTRA VEZ ");
+            NOTA = Integer.parseInt(JOptionPane.showInputDialog(null, " INGRESE SU NOTA ", " NOTA "));
+        }
+
+        if (NOTA >= 90) {
+            JOptionPane.showMessageDialog(null, " USTED OBTUBO UNA A  ");
+        } else if (NOTA >= 80) {
+            JOptionPane.showMessageDialog(null, " USTED OBTUBO UNA B  ");
+        } else if (NOTA >= 70) {
+            JOptionPane.showMessageDialog(null, " USTED OBTUBO UNA C  ");
+        } else if (NOTA >= 60) {
+            JOptionPane.showMessageDialog(null, " USTED OBTUBO UNA D  ");
+        } else if (NOTA < 60) {
+            JOptionPane.showMessageDialog(null, " USTED ESTA REPROBADO  ");
+        }
+
+    }
+
+}

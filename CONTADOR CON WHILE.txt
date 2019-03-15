@@ -1,0 +1,23 @@
+package CONTADORWHILE;
+import java.io.*;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+
+public class CONTAWHILE {
+
+    public static void main(String[] args) {
+       
+
+        int CONTA = Integer.parseInt(JOptionPane.showInputDialog(null," INGRESE DATO INICIAL " ));
+        int FIN = Integer.parseInt(JOptionPane.showInputDialog(null," INGRESE DATO FINAL " ));
+        
+        while(CONTA<= FIN) {
+            
+                JOptionPane.showMessageDialog(null," VALOR ACTUAL " + CONTA);
+            CONTA++;
+        }
+
+    }
+    
+}

@@ -1,0 +1,22 @@
+
+package DESCUENTO;
+import java.util.*;
+import javax.swing.JOptionPane;
+
+public class DESCUENTO {
+
+
+    public static void main(String[] args) {
+      
+        double COMPRA = Double.parseDouble(JOptionPane.showInputDialog(null, " INGRESE SU COMPRA: ", " COMPRA "));
+        double DESCU = COMPRA-(COMPRA*0.20);        
+        
+             if ( COMPRA>150  ){   
+                 JOptionPane.showMessageDialog(null," SU TOTAL ES DE = $  " + DESCU);
+          }else{
+                  JOptionPane.showMessageDialog(null," SU TOTAL ES DE = $  " + COMPRA);
+          }
+
+    }
+    
+}

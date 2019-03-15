@@ -1,0 +1,12 @@
+package FOR;
+import javax.swing.JOptionPane;
+
+public class FOR {
+    public static void main(String[] args) {
+        JOptionPane.showMessageDialog(null," EL VALOR AUMENTARA DE 1 EN 1 HASTA 100 " );
+        for (int N=1 ; N<=100 ; N++) {
+    JOptionPane.showMessageDialog(null," NUMERO ACTUAL = " + N);
+    
+        }
+    }
+}

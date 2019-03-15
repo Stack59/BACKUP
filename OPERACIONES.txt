@@ -1,0 +1,22 @@
+package OPERACIONES;
+
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+public class OPERACIONES {
+    public static void main(String[] args) {
+       Scanner dato=new Scanner (System.in);
+
+		 
+int N1 = Integer.parseInt(JOptionPane.showInputDialog(" INGRESE EL PRIMER NUMERO "," PRIMER NUMERO "));
+int N2 = Integer.parseInt(JOptionPane.showInputDialog(" INGRESE EL SEGUNDO NUMERO "," SEGUNDO NUMERO "));
+
+		
+	int SUMA=N1+N2;
+	int RESTA=N1-N2;
+	int MULTI=N1*N2;
+	int DIVI=N1/N2;
+		
+	JOptionPane.showMessageDialog(null,"\nLA SUMA ES = "+ SUMA +"\nLA RESTA ES = "+RESTA+"\nLA MULTIPLICACION ES = "+MULTI+"\nLA DIVICION ES = "+DIVI)  ;
+
+ }   
+}

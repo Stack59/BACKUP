@@ -1,0 +1,17 @@
+package TABLASMULTI;
+import javax.swing.JOptionPane;
+public class TABLASMULTI {
+
+    public static void main(String[] args) {
+       
+        int PRIMA;
+        int SECU;
+       for(PRIMA=1;PRIMA<=10;PRIMA++) {
+           
+               JOptionPane.showMessageDialog(null," TABLA DEL " + PRIMA);
+           for(SECU=1;SECU<=10;SECU++) {
+               JOptionPane.showMessageDialog(null,PRIMA + " X " + SECU + " = " + PRIMA*SECU);    
+           }
+       }       
+    } 
+}

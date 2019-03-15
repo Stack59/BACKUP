@@ -1,0 +1,57 @@
+
+package ejercicios1;
+
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+
+public class Gastos {
+         public static void main(String[] args) {
+         Scanner dato=new Scanner(System.in);
+         
+         Double agua = 50.00;
+         Double energia = 20.00;
+         Double colegiatura = 55.00;
+         Double totalc;
+         Double total;
+         Double descuento;
+         
+         
+         
+        String value = JOptionPane.showInputDialog(" ¿ CUANTOS HIJOS TIENE ESTUDIANDO ACTUALMENTE ? "," NUMERO DE HIJOS");
+        int hijos = Integer.parseInt(value);
+                
+
+       
+         if ( hijos>=5 ){
+             
+             totalc = (hijos*colegiatura);
+             descuento = totalc-(totalc*0.50);
+         
+             total = descuento+agua+energia;
+             
+             JOptionPane.showMessageDialog(null," GASTOS\n"
+                     + " \n " +
+                               " AGUA ------------------------------------------------------- = $ " +agua +"\n"
+                             + " ENERGIA ---------------------------------------------------- = $ " +energia + "\n"
+                             + " COLEGIATURA " +"POR "+ hijos +" HIJOS ESTUDIANDO "+"------ = $ "+descuento+ "\n"
+                             + " TOTAL A PAGAR ------------------------------------------ = $ " +total);
+   
+         }else{
+             
+             totalc = (hijos*colegiatura);
+             
+             total = totalc+agua+energia;
+             
+                          JOptionPane.showMessageDialog(null," GASTOS\n"
+                     + " \n " +
+                               " AGUA ------------------------------------------------------- = $ " +agua +"\n"
+                             + " ENERGIA ---------------------------------------------------- = $ " +energia + "\n"
+                             + " COLEGIATURA " +"POR "+ hijos +" HIJOS ESTUDIANDO "+"------ = $ "+totalc+ "\n"
+                             + " TOTAL A PAGAR ------------------------------------------ = $ " +total);
+             
+         }                
+
+         
+   }      
+}

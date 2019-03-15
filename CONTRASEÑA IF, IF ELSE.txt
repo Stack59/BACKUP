@@ -1,0 +1,18 @@
+package CONTRA;
+
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+public class CONTRASEÑA {
+       public static void main(String[] args){
+
+          int CLAVE = Integer.parseInt(JOptionPane.showInputDialog(" INGRESE SU CLAVE "," CLAVE = 1234"));
+        
+        if(CLAVE ==1234){
+           JOptionPane.showMessageDialog(null," BIENVENIDO "); 
+        }else if(CLAVE!=1234){
+            JOptionPane.showMessageDialog(null," CLAVE \n"
+                    + " INVALIDA ");      
+        }
+  }
+}
